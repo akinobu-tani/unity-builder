@@ -72,6 +72,13 @@ else
   echo "Created Android keystore."
 fi
 
+echo "Using github credential $UNITY_GITHUB_CREDENTIAL"
+
+# Set github credential for private repository using Unity Package Manager
+if [[ -n "$UNITY_GITHUB_CREDENTIAL" ]]; then
+  git config --global url."https://$UNITY_GITHUB_CREDENTIAL@github.com/".insteadOf "https://github.com/"
+fi
+
 #
 # Display custom parameters
 #
