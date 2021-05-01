@@ -113,7 +113,7 @@ unity-editor \
   -logfile /dev/stdout \
   -quit \
   -customBuildName "$BUILD_NAME" \
-  -projectPath "$UNITY_PROJECT_PATH" \
+  -projectPath "$PROJECT_PATH" \
   -buildTarget "$BUILD_TARGET" \
   -customBuildTarget "$BUILD_TARGET" \
   -customBuildPath "$CUSTOM_BUILD_PATH" \
